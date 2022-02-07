@@ -6,7 +6,6 @@ public class AnimationDelay : MonoBehaviour
 {
     [SerializeField] float delayTime = 0;
     Animator anim;
-    float time = 0;
     // Start is called before the first frame update
     void Start()
     {

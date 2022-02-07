@@ -20,11 +20,13 @@ public class ShotBall3D : MonoBehaviour
     int shotC = 0;
     Vector3 rayCastHP;
     public Text powerText;
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         pRb = GetComponent<Rigidbody>();
         aLine = GetComponent<LineRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -77,12 +79,18 @@ public class ShotBall3D : MonoBehaviour
 
         }
 
+        //構えるよ
+        if(Input.GetKeyDown(KeyCode.Space) && shotC ==0)
+        {
+            anim.Play("Shot Set");
+        }
 
         //打つよ
-        if (Input.GetKeyDown(KeyCode.Space) && shotC ==0)
+        if (Input.GetKeyUp(KeyCode.Space) && shotC ==0)
         {
-            Shot();
-            shotC += 1;
+
+            anim.Play("Shot");
+            
 
         }
 
@@ -112,6 +120,7 @@ public class ShotBall3D : MonoBehaviour
     //打った時呼ばれるよ
     void Shot()
     {
+        shotC += 1;
         Vector3 i = this.transform.position - cue.transform.position;
         Vector3 i2 = new Vector3(i.x, 0, i.z);
         Vector3 force = power * power2 * i2;
