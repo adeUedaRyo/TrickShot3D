@@ -72,10 +72,14 @@ public class ShotBall3D : MonoBehaviour
             //打った後
             
             camera2.SetActive(false);
-            var activeIndex = (cameraChange % 3);
-            camera1.SetActive(activeIndex == 0);
-            camera3.SetActive(activeIndex == 1);
-            camera4.SetActive(activeIndex == 2);
+            var activeIndex = (cameraChange % 4);
+            camera1.SetActive(activeIndex == 0 ||activeIndex ==1);
+            if(activeIndex == 1)
+            {
+                cameraChange++;
+            }
+            camera3.SetActive(activeIndex == 2);
+            camera4.SetActive(activeIndex == 3);
 
         }
 
