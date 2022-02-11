@@ -13,6 +13,8 @@ public class AnimationDelay : MonoBehaviour
         anim.enabled = false;
         StartCoroutine(AnimationOn());
     }
+
+    //指定した秒数だけ遅らせて再生
     IEnumerator AnimationOn()
     {
         yield return new WaitForSeconds(delayTime);
