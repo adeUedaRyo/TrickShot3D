@@ -101,7 +101,7 @@ public class ShotBall3D : MonoBehaviour
         //アシスト出すよ
         Ray ray = new Ray(this.transform.position, this.transform.right);
         RaycastHit hit;
-        rayCastHP = this.transform.position + this.transform.right * 100;
+        rayCastHP = this.transform.position + this.transform.right * 12;
         if (Physics.Raycast(ray, out hit))
         {
             rayCastHP = hit.point;
