@@ -7,6 +7,7 @@ public class Teleport : MonoBehaviour
     [SerializeField] GameObject portal;
     bool telep = false;
     Teleport otherTelepo;
+    [SerializeField] Animator telepAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,7 @@ public class Teleport : MonoBehaviour
         {
             other.transform.position = portal.transform.position;
             otherTelepo.telep = true;
-        }
+            telepAnim.Play("Teleport",0,0);        }
     }
     private void OnTriggerExit(Collider other)
     {
