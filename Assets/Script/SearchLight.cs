@@ -7,11 +7,11 @@ public class SearchLight : MonoBehaviour
     Rigidbody rb;
     float time;
     [SerializeField] GameObject explosion;
-    [SerializeField] GameObject gameOver;
+    GameManager gM;
     // Start is called before the first frame update
     void Start()
     {
-        
+        gM = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -23,22 +23,17 @@ public class SearchLight : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            //プレイヤーが入ったら急激に減速させる
-            rb =other.GetComponent<Rigidbody>();
-            rb.drag = 15;
             time += Time.deltaTime;
-
-            //１秒以上いたら爆破してゲームオーバー
-            if(time > 1)
+            if(time > 0.1)
             {
-                Instantiate(explosion,other.transform.position,other.transform.rotation);
+                Instantiate(explosion, other.transform.position, other.transform.rotation);
                 Destroy(other.gameObject);
-                if(time >2)
-                {
-                    gameOver.SetActive(true);
-                }
+                Invoke("GameOver",1);
             }
         }
     }
-
+    void GameOver() 
+    {
+        gM.Bad();
+    }
 }
