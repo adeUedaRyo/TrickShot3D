@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3576214475089907086}
   - component: {fileID: 3576214475089907073}
   - component: {fileID: 3576214475089907072}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2651,7 +2651,7 @@ GameObject:
   - component: {fileID: 3576214476155961701}
   - component: {fileID: 3576214476155961702}
   - component: {fileID: 3576214476155961703}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Propeller Type1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
