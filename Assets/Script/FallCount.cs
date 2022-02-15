@@ -21,13 +21,19 @@ public class FallCount : MonoBehaviour
     {
         if(other.tag == "Target")
         {
-            //successP.SetActive(true);
+            //ターゲットが落ちたら
             Instantiate(successP, new Vector3(this.transform.position.x, -1, this.transform.position.z), Quaternion.Euler(-90,0,0)) ;
-            gM.Good();
+            Invoke("Good",2f);
         }
         else if(other.tag == "Player")
         {
+            //プレイヤーが落ちたら
             gM.Bad();
         }
+    }
+    void Good()
+    {
+        gM.Good();
+        Destroy(GameObject.Find("Player Ball"));
     }
 }
