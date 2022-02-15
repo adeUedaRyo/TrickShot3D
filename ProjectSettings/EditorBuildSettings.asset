@@ -8,4 +8,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SimpleStage/Simple1.unity
     guid: 495a8f4425fa234468b8b0244165d9e7
+  - enabled: 1
+    path: Assets/Scenes/SimpleStage/Simple2.unity
+    guid: f98887a8fe7d1e64d9f934155ea2f934
+  - enabled: 1
+    path: Assets/Scenes/SimpleStage/Simple3.unity
+    guid: 399e10a72c1b33440a59ac5046e32060
+  - enabled: 1
+    path: Assets/Scenes/SimpleStage/Simple4.unity
+    guid: e5f3177971357fb42b067460e7d5c551
+  - enabled: 1
+    path: Assets/Scenes/SimpleStage/Simple5.unity
+    guid: 1f4c0cadee231664e967f283d5c909ff
+  - enabled: 1
+    path: Assets/Scenes/SimpleStage/Simple6.unity
+    guid: c5e412d15940f56429ff0ec3ce273921
+  - enabled: 1
+    path: Assets/Scenes/SimpleStage/Simple7.unity
+    guid: 678bb97cf24aea44db34eecfb5ea5957
+  - enabled: 1
+    path: Assets/Scenes/SimpleStage/Simple8.unity
+    guid: 20546a0dc0819b0408a4e56b646e7536
+  - enabled: 1
+    path: Assets/Scenes/SimpleStage/Simple9.unity
+    guid: d2f8b1387ed8c8b45966f452cb319057
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
