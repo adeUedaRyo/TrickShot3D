@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 3052153001830082058}
   - component: {fileID: 3052153001830082053}
   - component: {fileID: 3052153001830082052}
-  - component: {fileID: 3052153001830082057}
-  - component: {fileID: 3052153001830082056}
   m_Layer: 2
   m_Name: StopTrap
   m_TagString: Untagged
@@ -113,34 +111,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb891f1d81235de43a5f05099a60ec60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3052153001830082057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3052153001830082055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"rotateSpeed","value":{"$content":20.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
---- !u!114 &3052153001830082056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3052153001830082055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":390.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-310.0,"y":9.0},"guid":"21a6c2bb-e7ca-4625-801d-a951e31911dc","$version":"A","$type":"Unity.VisualScripting.Update","$id":"10"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"rotateSpeed","$type":"System.String"},"object":null},"position":{"x":-349.0,"y":111.0},"guid":"9f6d880d-2648-4524-9903-3a931232a112","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"12"},{"member":{"name":"deltaTime","parameterTypes":null,"targetType":"UnityEngine.Time","targetTypeName":"UnityEngine.Time","$version":"A"},"defaultValues":{},"position":{"x":-332.0,"y":251.0},"guid":"418bbbc4-b103-404f-8848-73215dd65343","$version":"A","$type":"Unity.VisualScripting.GetMember","$id":"14"},{"defaultValues":{},"position":{"x":-110.0,"y":156.0},"guid":"684db8fa-1e51-4223-86e7-6dc6d0b1b601","$version":"A","$type":"Unity.VisualScripting.GenericMultiply","$id":"17"},{"chainable":false,"member":{"name":"Rotate","parameterTypes":["System.Single","System.Single","System.Single"],"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null,"%xAngle":{"$content":0.0,"$type":"System.Single"},"%yAngle":{"$content":0.0,"$type":"System.Single"},"%zAngle":{"$content":0.0,"$type":"System.Single"}},"position":{"x":113.0,"y":11.0},"guid":"5c0399dc-9bca-41ae-a3d3-c013e634edf9","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"19"},{"sourceUnit":{"$ref":"10"},"sourceKey":"trigger","destinationUnit":{"$ref":"19"},"destinationKey":"enter","guid":"ef2c13a6-c0d0-44cb-ab13-b2d8c92c5071","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"value","destinationUnit":{"$ref":"17"},"destinationKey":"a","guid":"cd09e4a1-780f-4693-9854-e622c1ec06b5","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"value","destinationUnit":{"$ref":"17"},"destinationKey":"b","guid":"161045bc-9752-450c-84aa-86c3546e7cb0","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"product","destinationUnit":{"$ref":"19"},"destinationKey":"%zAngle","guid":"cc448f24-eca0-4306-8b15-ae15d51a994d","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}}'
-    _objectReferences: []
