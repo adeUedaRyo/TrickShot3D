@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0454b2827bfc7704f9331a42c960e9c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 150
+  power: 50
   trap: {fileID: 4690715019055510116}
 --- !u!1 &4690715019055510118
 GameObject:

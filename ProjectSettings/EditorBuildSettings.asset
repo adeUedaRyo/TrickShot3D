@@ -68,4 +68,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MagicStage/Magic2.unity
     guid: 4e22453b5316c044b9d64772c1291d59
+  - enabled: 1
+    path: Assets/Scenes/MagicStage/Magic3.unity
+    guid: 59430ab670be4244ea5bbec2a2b4a888
+  - enabled: 1
+    path: Assets/Scenes/MagicStage/Magic4.unity
+    guid: 64786ee747f0e3b4ebc326ae6d0d0d62
+  - enabled: 1
+    path: Assets/Scenes/MagicStage/Magic5.unity
+    guid: 4f850f42a1aa708488dbcfb59d022683
+  - enabled: 1
+    path: Assets/Scenes/MagicStage/Magic6.unity
+    guid: bd6f0b5edb7955f43ae8674c09148139
+  - enabled: 1
+    path: Assets/Scenes/MagicStage/Magic7.unity
+    guid: 64568a25f0d327b4882ae9726475bbdb
+  - enabled: 1
+    path: Assets/Scenes/MagicStage/Magic8.unity
+    guid: e507c6632f1c98a4c8dfe5414b1808fb
+  - enabled: 1
+    path: Assets/Scenes/MagicStage/Magic9.unity
+    guid: c78f4fda80bccf945b6aa931371372e4
   m_configObjects: {}
