@@ -39,4 +39,10 @@ public class GameManager : MonoBehaviour
         //指定された名前のシーンを呼び出す
         SceneManager.LoadScene(sceneName);
     }
+    void BgmChange()
+    {
+        GameObject BGM = GameObject.Find("BGM");
+        Destroy(BGM);
+    }
+
 }
