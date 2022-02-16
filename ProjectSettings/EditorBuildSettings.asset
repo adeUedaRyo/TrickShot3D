@@ -62,4 +62,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MachineStage/Machine9.unity
     guid: 635bc5e65db0f3a4aa81af5079dfe174
+  - enabled: 1
+    path: Assets/Scenes/MagicStage/Magic1.unity
+    guid: 25e88926dfd9ccb498f5e1a97772a39f
+  - enabled: 1
+    path: Assets/Scenes/MagicStage/Magic2.unity
+    guid: 4e22453b5316c044b9d64772c1291d59
   m_configObjects: {}
