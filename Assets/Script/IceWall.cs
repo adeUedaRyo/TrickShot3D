@@ -29,6 +29,9 @@ public class IceWall : MonoBehaviour
     {
         if(collision.gameObject.tag =="Player")
         {
+
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
             hp--;
         }
     }

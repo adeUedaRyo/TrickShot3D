@@ -26,7 +26,10 @@ public class Teleport : MonoBehaviour
         {
             other.transform.position = portal.transform.position;
             otherTelepo.telep = true;
-            telepAnim.Play("Teleport",0,0);        }
+            telepAnim.Play("Teleport",0,0);
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+        }
     }
     private void OnTriggerExit(Collider other)
     {

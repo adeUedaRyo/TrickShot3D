@@ -35,6 +35,9 @@ public class StopTrap : MonoBehaviour
         }
         if (time >= 0.1 )
         {
+
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
             rB.drag = 100;
         }
     }
