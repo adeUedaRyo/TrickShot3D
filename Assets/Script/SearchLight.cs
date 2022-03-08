@@ -24,7 +24,9 @@ public class SearchLight : MonoBehaviour
         if(other.tag == "Player")
         {
             time += Time.deltaTime;
-            if(time > 0.1)
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            if (time > 0.1)
             {
                 Instantiate(explosion, other.transform.position, other.transform.rotation);
                 Destroy(other.gameObject);

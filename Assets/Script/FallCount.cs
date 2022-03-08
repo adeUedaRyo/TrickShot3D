@@ -19,14 +19,19 @@ public class FallCount : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Target")
+        if (other.tag == "Target")
         {
             //ターゲットが落ちたら
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play(); 
             Instantiate(successP, new Vector3(this.transform.position.x, -1, this.transform.position.z), Quaternion.Euler(-90,0,0)) ;
             Invoke("Good",1.2f);
         }
         else if(other.tag == "Player")
         {
+
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
             //プレイヤーが落ちたら
             gM.Bad();
         }
