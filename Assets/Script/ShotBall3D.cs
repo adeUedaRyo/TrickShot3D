@@ -128,6 +128,10 @@ public class ShotBall3D : MonoBehaviour
         Vector3 i = this.transform.position - cue.transform.position;
         Vector3 i2 = new Vector3(i.x, 0, i.z);
         Vector3 force = power * power2 * i2;
+
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();
+
         pRb.AddForce(force,ForceMode.Impulse);
         Destroy(cue);
         Destroy(powerText);
