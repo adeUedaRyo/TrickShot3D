@@ -26,6 +26,9 @@ public class StopTrap : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         rB = other.GetComponent<Rigidbody>();
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();
+
     }
     private void OnTriggerStay(Collider other)
     {
@@ -34,11 +37,9 @@ public class StopTrap : MonoBehaviour
             time += Time.deltaTime;
         }
         if (time >= 0.1 )
-        {
-
-            AudioSource audio = GetComponent<AudioSource>();
-            audio.Play();
+        {   
             rB.drag = 100;
+
         }
     }
     private void OnTriggerExit(Collider other)
