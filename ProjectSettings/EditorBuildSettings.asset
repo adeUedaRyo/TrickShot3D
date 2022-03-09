@@ -98,4 +98,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CatStage/Cat3.unity
     guid: 68718ee3962860a42bab91658ce06251
+  - enabled: 1
+    path: Assets/Scenes/CatStage/Cat4.unity
+    guid: 1a62069a929cae6468edb4f3b0038c22
   m_configObjects: {}
